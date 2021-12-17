@@ -1,0 +1,205 @@
+/*Consideraciones generales:
+font-size: 18px para dispositivos pequeños. 20px para los demas dispositivos
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: whitesmoke;
+    list-style: none;
+}
+
+body{
+    font-size: 20px;
+    background-color: #15233f;
+}
+
+.navbar{
+    background-color: #101a2c;
+}
+.nav-link:hover{
+    color: white !important;
+    background-color: #040b13 ; 
+    border-radius: 5px;
+}
+
+/* skills */
+.dreamGames{
+    color: white;
+    font-size: 2em !important;
+    font-weight: bold;
+
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.dreamGames:hover{
+    color: #15233f;
+    transition: .4s;
+}
+
+.efecto{
+    position: relative;
+}
+.efecto::before{
+    transform: scale(0, 1.5);
+    transform-origin: bottom right;
+}
+.efecto:hover::before{
+    transform: scale(1, 1.5);
+    transform-origin: bottom left;
+}
+.efecto::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background-color: #7dd8ff;
+    z-index: -10;
+    transition: transform .5s ease;
+    color: white !important;
+}
+/* skills */
+
+section{
+    height: 1000px;
+}
+
+.btn-light:active{
+    background-color: rgb(216, 216, 216);
+    border-color: #0A2472;
+}
+
+.ajusteCarousel{
+    width: 400px;
+}
+
+.sombraInternaTop{
+    box-shadow: inset 0px 15px 10px -8px rgba(255, 255, 255, 0.219);
+}
+
+.separadorCeleste{
+    background-color: #7dd8ff;
+}
+footer .separadorCeleste{
+    width: 25%;
+}
+
+#producto1{
+    width: 400px;
+}
+
+#producto2{
+    width: 400px;
+}
+
+.img-logo{
+    border-radius: 1000px;
+}
+
+.img-thumbnail{
+    width: 400px;
+    height: 500px;
+}
+
+.modal-letras{
+    color:black;
+}
+
+.boton-imagen{
+    clear: all;
+    border: none;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #101a2c;
+    box-shadow: inset 0px 15px 10px -8px rgba(255, 255, 255, 0.219);
+    font-size: 0.9em;
+}
+
+li a, p a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover, p a:hover{
+    transition: 0.5s;
+    color: #70d4ff;
+}
+
+.fab{
+    font-size: 2em;
+}
+.fa-facebook:hover{
+    transition: 0.5s;
+    color: #3B5998;
+}
+.fa-twitter:hover{
+    transition: 0.5s;
+    color: #00acee;
+}
+.fa-instagram:hover{
+    transition: 0.5s;
+    color: #de1b85;
+}
+.fa-discord:hover{
+    transition: 0.5s;
+    color: #7289da;
+}
+
+.copyright{
+    font-size: 0.8em;
+}
+
+.modal-body, .modal-header, .modal-footer{
+    background-color: #15233f;
+}
+
+@media screen and (max-width: 317px){
+    body{
+        font-size: 18px;
+    }
+
+    .welcome{
+        font-size: 1.4em !important;
+    }
+
+    .img-thumbnail{
+        width: 320px;
+        height: 420px;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+    .copyright{
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 318px) and (max-width: 500px){
+    body{
+        font-size: 18px;
+    }
+
+    .welcome{
+        font-size: 1.7em !important;
+    }
+
+    .img-thumbnail{
+        width: 320px;
+        height: 420px;
+    }
+
+    footer{
+        font-size: 1em;
+    }
+    .copyright{
+        font-size: 0.9em;
+    }
+    
+
+}
